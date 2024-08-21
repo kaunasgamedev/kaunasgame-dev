@@ -2,13 +2,17 @@
 title: Home
 ---
 
-{{< group yOffset="15%" width="95%" height="15%" gap="10%" align="spread" >}}
+{{< group yOffset="0%" width="100%" height="5%" gap="10%" align="left" >}}
+  {{< gif name="dice" flipped="false" >}}
+{{</ group >}}
+
+{{< group yOffset="12%" width="95%" height="15%" gap="10%" align="spread" >}}
   {{< group yOffset="0%" width="30%" height="100%" gap="5%" align="left" >}}
     {{< gif name="skull" flipped="false" >}}
     {{< gif name="skull" flipped="false" >}}
   {{</ group >}}
 
-  {{< group yOffset="0%" width="30%" height="100%" gap="10%" align="center" >}}
+  {{< group yOffset="0%" width="40%" height="100%" gap="10%" align="center" >}}
     {{< gif name="welcome" flipped="false" >}}
   {{</ group >}}
 
@@ -18,26 +22,42 @@ title: Home
   {{</ group >}}
 {{</ group >}}
 
-{{< group yOffset="50%" width="100%" height="13%" gap="50%" align="center" >}}
+{{< group yOffset="60%" width="80%" height="13%" gap="50%" align="center" >}}
   {{< gif name="comehere" flipped="false" >}}
   {{< gif name="comehere" flipped="false" >}}
 {{</ group >}}
 
-{{< group yOffset="80%" width="100%" height="15%" gap="5%" align="center" >}}
+{{< group yOffset="82%" width="100%" height="12%" gap="5%" align="center" >}}
+  {{< gif name="construction-sign" flipped="false" width="10%" >}}
   {{< gif name="construction" flipped="false" >}}
   {{< gif name="construction" flipped="false" >}}
   {{< gif name="construction" flipped="false" >}}
-  {{< gif name="construction" flipped="false" >}}
-  {{< gif name="construction" flipped="false" >}}
+  {{< gif name="construction-sign" flipped="false" width="10%" >}}
 {{</ group >}}
 
-{{< group yOffset="30%" width="50%" height="40%" gap="8%" align="center" direction="vertical" >}}
+{{< group yOffset="33%" width="100%" height="15%" gap="10%" align="spread" >}}
+  {{< gif name="lightning" flipped="true" >}}
+  {{< gif name="lightning" flipped="false" >}}
+{{</ group >}}
+
+{{< group yOffset="85%" width="95%" height="10%" gap="10%" align="left" >}}
+  {{< gif name="dj" flipped="false" >}}
+{{</ group >}}
+
+{{< group yOffset="90%" width="95%" height="5%" gap="1%" align="right" >}}
+  {{< gif name="sonic" flipped="false" >}}
+  {{< gif name="cd" flipped="false" >}}
+{{</ group >}}
+
+{{< group yOffset="35%" width="50%" height="40%" gap="8%" align="center" direction="vertical" >}}
 
   {{< center >}}
 
-  _KAUNAS GAME DEVELOPERS!!!_
+  _🕹️ KAUNAS GAME DEVELOPERS 🕹️_
 
-  We make geims and do meetings 🤝❤️🫃
+  We make geims and do meetings
+
+  🤝❤️🫃
 
   {{< funky-text >}}
   [Join discord](https://discord.gg/jxwjHvwuc8)

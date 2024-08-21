@@ -1,8 +1,9 @@
 ﻿{{ $flipped := .Get "flipped" | default "false" }}
 {{ $name := .Get "name" }}
+{{ $width := .Get "width" }}
 {{ $height := .Get "height" }}
 <img
   class="gif{{ if eq $flipped "true"}} flipped{{ end }}"
-  style="{{ if $height }}height: {{ $height }}{{ end }}"
+  style="{{ if $height }}height: {{ $height }}{{ end }}{{ if $width }}width: {{ $width }}{{ end }}"
   src="/gifs/{{ $name }}.gif"
 >

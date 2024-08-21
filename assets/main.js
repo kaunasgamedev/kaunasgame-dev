@@ -11,6 +11,8 @@
 
   const Site = {
     initialize: function () {
+
+      // Random colors and text size
       const paragraphElements = document.querySelectorAll('p, a, h1, div')
 
       paragraphElements.forEach(paragraphElement => {
@@ -49,6 +51,10 @@
         classList.add(shadowClass)
         classList.add(textClass)
       })
+
+      // Background audio
+      const backgroundAudio = document.getElementById('background-audio');
+      backgroundAudio.volume = 0.4;
     },
   }
 
