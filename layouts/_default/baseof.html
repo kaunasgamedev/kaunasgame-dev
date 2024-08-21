@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+
+    <meta name="description" content="{{ .Site.Params.description }}"/>
+    <meta name="author" content="{{ .Site.Params.author }}"/>
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ partial "favicon.html" }}
+
+    {{ with resources.Get "main.scss" | resources.ToCSS }}
+      <style type="text/css">
+        {{ .Content | safeCSS }}
+      </style>
+    {{ end }}
+
+    <title>
+      {{- if or (not .Params.Title) (eq .Params.title .Site.Params.name) -}}
+        {{ .Site.Params.name }}
+      {{- else -}}
+        {{ .Params.title }} | {{ .Site.Params.name }}
+      {{- end -}}
+    </title>
+  </head>
+  <body>
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
+
+    {{ block "js" . }}
+      {{ with resources.Get "main.js" }}
+        <script type="application/javascript">
+          {{ .Content | safeJS }}
+        </script>
+      {{ end }}
+    {{ end }}
+  </body>
+</html>

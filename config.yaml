@@ -1,0 +1,27 @@
+disableHugoGeneratorInject: true
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
+  - RSS
+  - sitemap
+
+languageCode: en-us
+baseURL: https://kaunasgame.dev
+buildFuture: true
+
+markup:
+  highlight:
+    codeFences: false
+
+  goldmark:
+    renderer:
+      xHTML: true
+
+params:
+  description: Kaunas Game Dev community
+  copyright: © 2024 kaunasgamedev
+  author: Kaunas Game Dev
+  name: Kaunas Game Dev
+
+  images:
+    - logo/kaunasgamedev-logo.png

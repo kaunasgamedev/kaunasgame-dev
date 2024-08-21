@@ -1,0 +1,4 @@
+{{ $reversed := .Get "reversed" | default "false" }}
+<div class="{{ if eq $reversed "true" }}funky-text-reversed{{ else }}funky-text{{ end }}" >
+  {{ .Inner | markdownify }}
+</div>

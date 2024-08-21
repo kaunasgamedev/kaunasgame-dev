@@ -1,0 +1,10 @@
+﻿{{ $flipped := .Get "flipped" | default "false" }}
+{{ $name := .Get "name" }}
+{{ $top := .Get "top" }}
+{{ $left := .Get "left" }}
+{{ $right := .Get "right" }}
+{{ $bottom := .Get "bottom" }}
+<img
+  class="gif{{ if eq $flipped "true"}} flipped{{ end }}"
+  src="/gifs/{{ $name }}.gif" style="top: {{ $top }}; left: {{ $left }}; right: {{ $right }}; bottom: {{ $bottom }}"
+>

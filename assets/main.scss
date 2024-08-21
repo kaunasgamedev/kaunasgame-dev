@@ -1,0 +1,84 @@
+@import 'reset';
+@import 'fonts';
+@import 'variables';
+@import 'keyframes';
+@import 'utils';
+
+// Page configuration
+body {
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: $font-size;
+
+  background-image: url($background-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: $color-text;
+  min-height: 100%;
+
+  overflow-anchor: none;
+}
+
+// Main content
+main {
+  position: relative;
+
+  padding: 1rem 1rem;
+
+  min-height: 100%;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+// Centering
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+// Random Colors
+.text-color-01 { color: $color-text-01; }
+.text-color-02 { color: $color-text-02; }
+.text-color-03 { color: $color-text-03; }
+.text-color-04 { color: $color-text-04; }
+.text-color-05 { color: $color-text-05; }
+.text-color-06 { color: $color-text-06; }
+
+// Random Shadows
+.text-shadow-01 { text-shadow: 0 4px 10px $color-text-shadow-01; }
+.text-shadow-02 { text-shadow: 0 4px 10px $color-text-shadow-02; }
+.text-shadow-03 { text-shadow: 0 4px 10px $color-text-shadow-03; }
+.text-shadow-04 { text-shadow: 0 4px 10px $color-text-shadow-04; }
+.text-shadow-05 { text-shadow: 0 4px 10px $color-text-shadow-05; }
+
+// Random Sizes
+.text-size-01 { font-size: $font-size * 1.0; }
+.text-size-02 { font-size: $font-size * 1.1; }
+.text-size-03 { font-size: $font-size * 1.2; }
+.text-size-04 { font-size: $font-size * 1.3; }
+.text-size-05 { font-size: $font-size * 1.4; }
+.text-size-06 { font-size: $font-size * 1.5; }
+
+// Funky text
+.funky-text {
+  animation: funky-text-bounce-clip $funky-text-bounce-duration infinite ease-in-out;
+}
+
+.funky-text-reversed {
+  animation: funky-text-bounce-clip-reversed $funky-text-bounce-duration infinite ease-in-out;
+}
+
+// Gifs
+.gif {
+  position: absolute;
+}
+
+// Flipping
+.flipped {
+  transform: scaleX(-1);
+}
