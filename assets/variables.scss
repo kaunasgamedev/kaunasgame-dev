@@ -1,5 +1,9 @@
 // Text
-$font-size: 2rem;
+$font-size: 1.2rem;
+$font-size-desktop-multiplier: 2;
+
+// Device media query sizes
+$width-desktop: 769px;
 
 // Colors
 $color-text: #000000;
@@ -10,12 +14,17 @@ $color-text-03: #fffa00;
 $color-text-04: #0070ff;
 $color-text-05: #1dff00;
 $color-text-06: #ff00dd;
+$color-text-07: #0004fc;
+$color-text-08: #ff0000;
 
 $color-text-shadow-01: #682be0;
 $color-text-shadow-02: #e02b55;
 $color-text-shadow-03: #56ff00;
 $color-text-shadow-04: #ff9a04;
 $color-text-shadow-05: #ff0000;
+$color-text-shadow-06: #00ffeb;
+$color-text-shadow-07: #fffd00;
+$color-text-shadow-08: #ff00ae;
 
 // Backgrounds
 $background-url: 'background.gif';

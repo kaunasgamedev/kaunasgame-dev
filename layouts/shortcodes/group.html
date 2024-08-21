@@ -1,0 +1,31 @@
+﻿{{ $yOffset := .Get "yOffset" | default "0" }}
+{{ $width := .Get "width" | default "80%" }}
+{{ $height := .Get "height" | default "20%" }}
+{{ $gap := .Get "gap" | default "10%" }}
+{{ $align := .Get "align" | default "none" }}
+{{ $direction := .Get "direction" | default "horizontal" }}
+
+{{ $justify := "none" }}
+{{ if eq $align "center" }}
+  {{ $justify = "center" }}
+{{ else if eq $align "left" }}
+  {{ $justify = "left" }}
+{{ else if eq $align "right" }}
+  {{ $justify = "right" }}
+{{ else if eq $align "spread" }}
+  {{ $justify = "space-around" }}
+{{ end }}
+
+{{ $flexDirection := "row" }}
+{{ if eq $direction "horizontal" }}
+  {{ $flexDirection = "row" }}
+{{ else if eq $direction "vertical" }}
+  {{ $flexDirection = "column" }}
+{{ end }}
+
+<div
+  class="group"
+  style="flex-direction: {{ $flexDirection }}; {{ if eq $align "none"}}display: block; {{ end }}top: {{ $yOffset }}; width: {{ $width }}; height: {{ $height }}; gap: {{ $gap }}; justify-content: {{ $justify }}"
+>
+  {{ .Inner }}
+</div>

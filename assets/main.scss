@@ -4,23 +4,30 @@
 @import 'keyframes';
 @import 'utils';
 
-// Page configuration
+// Main elements
 body {
   font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
   font-size: $font-size;
 
   background-image: url($background-url);
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  // Background stretch makes this more cursed
+  background-size: 100% 100%;
 
   color: $color-text;
   min-height: 100%;
 
+  line-height: 1.5;
+
   overflow-anchor: none;
+
+  @media only screen and (min-width: $width-desktop) {
+    font-size: $font-size;
+  }
 }
 
-// Main content
 main {
   position: relative;
 
@@ -35,28 +42,56 @@ main {
   justify-content: center;
 }
 
-// Centering
+img {
+  height: 100%;
+  min-width: 0;
+}
+
+// Layout: alignment
 .center {
-  margin: auto;
   text-align: center;
 }
 
-// Random Colors
+// Layout: grouping, rows, etc
+.group {
+  position: absolute;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+}
+
+.group .group {
+  position: relative;
+}
+
+// Utilities: transformations
+.flipped {
+  transform: scaleX(-1);
+}
+
+// Utilities: random text color
 .text-color-01 { color: $color-text-01; }
 .text-color-02 { color: $color-text-02; }
 .text-color-03 { color: $color-text-03; }
 .text-color-04 { color: $color-text-04; }
 .text-color-05 { color: $color-text-05; }
 .text-color-06 { color: $color-text-06; }
+.text-color-07 { color: $color-text-07; }
+.text-color-08 { color: $color-text-08; }
 
-// Random Shadows
+// Utilities: random shadow color
 .text-shadow-01 { text-shadow: 0 4px 10px $color-text-shadow-01; }
 .text-shadow-02 { text-shadow: 0 4px 10px $color-text-shadow-02; }
 .text-shadow-03 { text-shadow: 0 4px 10px $color-text-shadow-03; }
 .text-shadow-04 { text-shadow: 0 4px 10px $color-text-shadow-04; }
 .text-shadow-05 { text-shadow: 0 4px 10px $color-text-shadow-05; }
+.text-shadow-06 { text-shadow: 0 4px 10px $color-text-shadow-06; }
+.text-shadow-07 { text-shadow: 0 4px 10px $color-text-shadow-07; }
+.text-shadow-08 { text-shadow: 0 4px 10px $color-text-shadow-08; }
 
-// Random Sizes
+// Utilities: random text size
 .text-size-01 { font-size: $font-size * 1.0; }
 .text-size-02 { font-size: $font-size * 1.1; }
 .text-size-03 { font-size: $font-size * 1.2; }
@@ -64,21 +99,22 @@ main {
 .text-size-05 { font-size: $font-size * 1.4; }
 .text-size-06 { font-size: $font-size * 1.5; }
 
-// Funky text
+@media only screen and (min-width: $width-desktop) {
+  .text-size-01 { font-size: $font-size * 1.0 * $font-size-desktop-multiplier; }
+  .text-size-02 { font-size: $font-size * 1.1 * $font-size-desktop-multiplier; }
+  .text-size-03 { font-size: $font-size * 1.2 * $font-size-desktop-multiplier; }
+  .text-size-04 { font-size: $font-size * 1.3 * $font-size-desktop-multiplier; }
+  .text-size-05 { font-size: $font-size * 1.4 * $font-size-desktop-multiplier; }
+  .text-size-06 { font-size: $font-size * 1.5 * $font-size-desktop-multiplier; }
+}
+
+// Utilities: funky text
 .funky-text {
+  margin: 1rem 0;
   animation: funky-text-bounce-clip $funky-text-bounce-duration infinite ease-in-out;
 }
 
 .funky-text-reversed {
+  margin: 1rem 0;
   animation: funky-text-bounce-clip-reversed $funky-text-bounce-duration infinite ease-in-out;
-}
-
-// Gifs
-.gif {
-  position: absolute;
-}
-
-// Flipping
-.flipped {
-  transform: scaleX(-1);
 }

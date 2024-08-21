@@ -16,6 +16,7 @@ markup:
   goldmark:
     renderer:
       xHTML: true
+      unsafe: true
 
 params:
   description: Kaunas Game Dev community

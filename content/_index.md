@@ -2,30 +2,51 @@
 title: Home
 ---
 
-{{< gif name="skull" flipped="false" top="15%" left="0%" >}}
-{{< gif name="skull" flipped="false" top="15%" left="15%" >}}
+{{< group yOffset="15%" width="95%" height="15%" gap="10%" align="spread" >}}
+  {{< group yOffset="0%" width="30%" height="100%" gap="5%" align="left" >}}
+    {{< gif name="skull" flipped="false" >}}
+    {{< gif name="skull" flipped="false" >}}
+  {{</ group >}}
 
-{{< gif name="skull" flipped="true" top="15%" right="0%" >}}
-{{< gif name="skull" flipped="true" top="15%" right="15%" >}}
+  {{< group yOffset="0%" width="30%" height="100%" gap="10%" align="center" >}}
+    {{< gif name="welcome" flipped="false" >}}
+  {{</ group >}}
 
-{{< gif name="welcome" flipped="false" top="15%" left="40%" >}}
+  {{< group yOffset="0%" width="30%" height="100%" gap="5%" align="left" >}}
+    {{< gif name="skull" flipped="true" >}}
+    {{< gif name="skull" flipped="true" >}}
+  {{</ group >}}
+{{</ group >}}
 
-{{< gif name="comehere" flipped="false" top="55%" left="20%" >}}
-{{< gif name="comehere" flipped="false" top="55%" right="20%" >}}
+{{< group yOffset="50%" width="100%" height="13%" gap="50%" align="center" >}}
+  {{< gif name="comehere" flipped="false" >}}
+  {{< gif name="comehere" flipped="false" >}}
+{{</ group >}}
 
-{{< gif name="construction" flipped="false" top="70%" left="30%" >}}
-{{< gif name="construction" flipped="false" top="70%" left="48%" >}}
-{{< gif name="construction" flipped="false" top="70%" left="63%" >}}
+{{< group yOffset="80%" width="100%" height="15%" gap="5%" align="center" >}}
+  {{< gif name="construction" flipped="false" >}}
+  {{< gif name="construction" flipped="false" >}}
+  {{< gif name="construction" flipped="false" >}}
+  {{< gif name="construction" flipped="false" >}}
+  {{< gif name="construction" flipped="false" >}}
+{{</ group >}}
 
-KAUNAS GAME DEVELOPERS!
+{{< group yOffset="30%" width="50%" height="40%" gap="8%" align="center" direction="vertical" >}}
 
-We make geims and do meetings 🤝🫃❤️
+  {{< center >}}
 
-{{< funky-text >}}
-[Join discord](https://discord.gg/jxwjHvwuc8)
-{{</ funky-text >}}
+  _KAUNAS GAME DEVELOPERS!!!_
+
+  We make geims and do meetings 🤝❤️🫃
+
+  {{< funky-text >}}
+  [Join discord](https://discord.gg/jxwjHvwuc8)
+  {{</ funky-text >}}
 
 
-{{< funky-text reversed="true" >}}
-🤓[GitHub](https://github.com/kaunasgamedev)🤓
-{{</ funky-text >}}
+  {{< funky-text reversed="true" >}}
+  🤓 [GitHub](https://github.com/kaunasgamedev) 🤓
+  {{</ funky-text >}}
+
+  {{</ center >}}
+{{</ group >}}

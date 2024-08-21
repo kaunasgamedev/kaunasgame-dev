@@ -11,7 +11,7 @@
 
   const Site = {
     initialize: function () {
-      const paragraphElements = document.querySelectorAll('p, a, h1')
+      const paragraphElements = document.querySelectorAll('p, a, h1, div')
 
       paragraphElements.forEach(paragraphElement => {
         const classList = paragraphElement.classList
@@ -23,6 +23,8 @@
           'text-color-04',
           'text-color-05',
           'text-color-06',
+          'text-color-07',
+          'text-color-08',
         ])
 
         const shadowClass = Utils.getRandomElement([
@@ -31,6 +33,8 @@
           'text-shadow-03',
           'text-shadow-04',
           'text-shadow-05',
+          'text-shadow-07',
+          'text-shadow-08',
         ])
 
         const textClass = Utils.getRandomElement([
