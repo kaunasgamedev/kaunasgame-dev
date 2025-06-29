@@ -1,3 +1,55 @@
 ﻿{{ define "main" }}
-  {{ .Content }}
+  {{ $pages := slice }}
+  {{ $eventPages := slice }}
+
+  {{ range sort .Site.Pages "Weight" "asc" }}
+    {{ if not (in .Params.tags "hidden") }}
+      {{ $pages = $pages | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $pages }}
+    {{ if (in .Params.tags "event") }}
+      {{ $eventPages = $eventPages | append . }}
+    {{ end }}
+  {{ end }}
+
+  <section>
+    <header>
+      <h1 id="{{ (replace .Title " " "-") | lower }}">{{- .Title -}}</h1>
+    </header>
+  </section>
+
+  <section>
+    <header>
+      <h2 id="events">Events</h2>
+    </header>
+    {{ range $eventPages }}
+      <article>
+        <header>
+          <h3 id="{{ (replace .Title " " "-") | lower }}">{{- .Title -}}</h3>
+          {{ partial "date.html" . }}
+        </header>
+        {{ .Content }}
+      </article>
+    {{ end }}
+  </section>
+
+  {{ with .Site.GetPage "/mentors" }}
+    <section>
+      <header>
+        <h2 id="mentors">Mentors</h2>
+      </header>
+      {{ .Content }}
+    </section>
+  {{ end }}
+
+  {{ with .Site.GetPage "/mailing-list" }}
+    <section>
+      <header>
+        <h2 id="mailing-list">Mailing List</h2>
+      </header>
+      {{ .Content }}
+    </section>
+  {{ end }}
 {{ end }}

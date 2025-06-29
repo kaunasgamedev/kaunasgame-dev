@@ -59,6 +59,6 @@
   }
 
   window.addEventListener('DOMContentLoaded', function () {
-    Site.initialize()
+    // Site.initialize()
   })
 })()

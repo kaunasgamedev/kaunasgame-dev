@@ -1,0 +1,2 @@
+﻿{{- $safeTitle := lower (replace .PageInner.Title " " "-") -}}
+<h{{ .Level }} id="{{ $safeTitle }}-{{ .Anchor }}">{{ .Text }}</h{{ .Level }}>
