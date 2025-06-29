@@ -1,7 +1,6 @@
 disableHugoGeneratorInject: true
 disableKinds:
   - taxonomy
-  - taxonomyTerm
   - RSS
   - sitemap
 
