@@ -55,7 +55,7 @@ title: Home
 
   _🕹️ KAUNAS GAME DEVELOPERS 🕹️_
 
-  We make geims and do meetings
+  We make geims and do meetings...
 
   🤝❤️🫃
 
