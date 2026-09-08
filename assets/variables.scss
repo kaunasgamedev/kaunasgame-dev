@@ -30,6 +30,10 @@ $color-text-shadow-08: #006d77;
 // Backgrounds
 $background-url: '/backgrounds/background.gif';
 
+// Cursors, hotspot is the fingertip
+$cursor-default: url('/cursors/regular.png') 16 1, auto;
+$cursor-hover: url('/cursors/hover.png') 12 1, pointer;
+
 // Funky text
 $funky-text-bounce-amount: 1.2;
 $funky-text-bounce-duration: 1s;

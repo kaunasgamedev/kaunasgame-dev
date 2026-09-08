@@ -23,6 +23,7 @@ body {
   line-height: 1.5;
 
   overflow-anchor: none;
+  cursor: $cursor-default;
 
   @media only screen and (min-width: $width-desktop) {
     font-size: $font-size;
@@ -46,6 +47,11 @@ main {
 img {
   height: 100%;
   min-width: 0;
+}
+
+a,
+button {
+  cursor: $cursor-hover;
 }
 
 // Layout: alignment

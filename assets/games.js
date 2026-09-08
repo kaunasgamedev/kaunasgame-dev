@@ -54,7 +54,7 @@
       maxDrift: 160,
     },
 
-    // Spongebob bubbles on load, reroll, open
+    // Spongebob bubbles on reroll and open
     risingBubbles: {
       countRange: {
         min: 30,
@@ -102,7 +102,7 @@
         },
       },
 
-      // Page load and reroll
+      // Reroll
       bubbles: {
         src: '/sfx/sfx-bubbles.mp3',
         playbackRateRange: {
@@ -173,7 +173,7 @@
       }
 
       Bubbles.loadState()
-      Bubbles.spawnSet(new Set(), false)
+      Bubbles.spawnSet(new Set(), true)
 
       document.querySelector('.reroll').addEventListener('click', function () {
         if (!Popup.isOpen()) {
@@ -665,6 +665,7 @@
 
     close: function () {
       Popup.element.classList.add('closing')
+      document.querySelector('.popup-backdrop').classList.remove('visible')
     },
 
     isOpen: function () {
@@ -699,6 +700,7 @@
       popupElement.querySelector('.popup-open').href = bubbleElement.href
 
       popupElement.hidden = false
+      document.querySelector('.popup-backdrop').classList.add('visible')
     },
   }
 
@@ -731,10 +733,10 @@
     Bubbles.initialize()
     Mute.initialize()
 
-    // Audio needs a gesture, the load-time bubbles sfx plays late instead of never
+    // Audio needs a gesture
     window.addEventListener('pointerdown', function () {
       document.getElementById('background-audio').play()
-      Vfx.loadSounds().then(() => Vfx.playSound('bubbles'))
+      Vfx.loadSounds()
     }, {once: true})
   })
 })()

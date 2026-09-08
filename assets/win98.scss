@@ -74,7 +74,7 @@ $win98-title-end: #1084d0;
   background: $win98-face;
   border: none;
   text-decoration: none;
-  cursor: pointer;
+  cursor: $cursor-hover;
 
   box-shadow:
     inset -1px -1px $win98-dark,
