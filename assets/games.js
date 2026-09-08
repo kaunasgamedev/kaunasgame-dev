@@ -691,8 +691,14 @@
       titleElement.textContent = title
       titleElement.style.color = getComputedStyle(bubbleElement).color
 
-      thumbnailElement.src = thumbnail
+      // Blank until the new one is in, then fades in via css
       thumbnailElement.hidden = thumbnail === ''
+      thumbnailElement.classList.remove('loaded')
+      thumbnailElement.onload = function () {
+        thumbnailElement.classList.add('loaded')
+      }
+      thumbnailElement.src = ''
+      thumbnailElement.src = thumbnail
       popupElement.querySelector('.popup-author').textContent = author
       const platformsText = platforms ? `Platforms: ${platforms}` : ''
 
