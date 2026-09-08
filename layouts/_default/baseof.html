@@ -12,13 +12,13 @@
     {{ template "_internal/opengraph.html" . }}
     {{ partial "favicon.html" }}
 
-    {{ with resources.Get "main.scss" | resources.ToCSS }}
+    {{ with resources.Get "main.scss" | css.Sass }}
       <style type="text/css">
         {{ .Content | safeCSS }}
       </style>
     {{ end }}
     {{ range .Params.css }}
-      {{ with resources.Get . | resources.ToCSS }}
+      {{ with resources.Get . | css.Sass }}
         <style type="text/css">
           {{ .Content | safeCSS }}
         </style>

@@ -4,7 +4,7 @@ Landing page for Kaunas Game Dev community
 
 ## Prerequisites
 
-Make sure you have [Hugo Extended](https://gohugo.io/getting-started/installing) installed and that your version is `0.140.2` or greater.
+Make sure you have [Hugo Extended](https://gohugo.io/getting-started/installing) installed and that your version is `0.165.0` or greater.
 
 ## Commands
 
