@@ -1,0 +1,110 @@
+// Win98 window look, https://jdan.github.io/98.css/
+$win98-face: #c0c0c0;
+$win98-light: #ffffff;
+$win98-shadow: #808080;
+$win98-dark: #0a0a0a;
+$win98-title-start: #000080;
+$win98-title-end: #1084d0;
+
+.window {
+  padding: 3px;
+
+  background: $win98-face;
+  font-size: 1rem;
+
+  // Outer raised bevel
+  box-shadow:
+    inset -1px -1px $win98-dark,
+    inset 1px 1px $win98-light,
+    inset -2px -2px $win98-shadow,
+    inset 2px 2px #dfdfdf;
+}
+
+.window[hidden] {
+  display: none;
+}
+
+// Keep the random text classes off the window text
+.window,
+.window * {
+  color: #000000;
+  text-shadow: none;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 3px 2px 3px 6px;
+
+  background: linear-gradient(90deg, $win98-title-start, $win98-title-end);
+  font-weight: bold;
+}
+
+.title-bar,
+.title-bar-text {
+  color: $win98-light;
+}
+
+.window-body {
+  padding: 12px;
+  text-align: center;
+}
+
+.window-body p {
+  margin: 0 0 4px;
+}
+
+.window-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+
+  margin-top: 12px;
+}
+
+// Raised bevel button, shared by Open, Cancel and the X
+.button,
+.title-bar-close {
+  display: inline-block;
+  min-width: 75px;
+  padding: 4px 12px;
+
+  background: $win98-face;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow:
+    inset -1px -1px $win98-dark,
+    inset 1px 1px $win98-light,
+    inset -2px -2px $win98-shadow,
+    inset 2px 2px #dfdfdf;
+}
+
+.button:active,
+.title-bar-close:active {
+  box-shadow:
+    inset -1px -1px $win98-light,
+    inset 1px 1px $win98-dark,
+    inset -2px -2px #dfdfdf,
+    inset 2px 2px $win98-shadow;
+}
+
+// The X: square, sized by the title bar font
+.title-bar-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.2em;
+  height: 1.1em;
+  min-width: 0;
+  padding: 0;
+  margin-left: 0.5em;
+
+  line-height: 1;
+  font-size: inherit;
+  font-weight: bold;
+}

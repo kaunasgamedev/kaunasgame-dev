@@ -17,6 +17,13 @@
         {{ .Content | safeCSS }}
       </style>
     {{ end }}
+    {{ range .Params.css }}
+      {{ with resources.Get . | resources.ToCSS }}
+        <style type="text/css">
+          {{ .Content | safeCSS }}
+        </style>
+      {{ end }}
+    {{ end }}
 
     <title>
       {{- if or (not .Params.Title) (eq .Params.title .Site.Params.name) -}}
@@ -41,6 +48,13 @@
         <script type="application/javascript">
           {{ .Content | safeJS }}
         </script>
+      {{ end }}
+      {{ range .Params.js }}
+        {{ with resources.Get . }}
+          <script type="application/javascript">
+            {{ .Content | safeJS }}
+          </script>
+        {{ end }}
       {{ end }}
     {{ end }}
   </body>

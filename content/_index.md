@@ -1,6 +1,10 @@
 ---
 title: Home
+js:
+  - bouncing-popup.js
 ---
+
+{{< bouncing-popup href="/games" >}}PLAY OUR GAMES{{< /bouncing-popup >}}
 
 {{< group yOffset="0%" width="100%" height="5%" gap="10%" align="left" >}}
   {{< gif name="dice" flipped="false" >}}

@@ -1,0 +1,54 @@
+{{ define "main" }}
+  {{ with .Params.background }}
+    {{ if hasSuffix . ".mp4" }}
+      <video class="background" autoplay muted loop playsinline>
+        <source src="{{ . }}" type="video/mp4">
+      </video>
+    {{ else }}
+      <img class="background" src="{{ . }}" alt="">
+    {{ end }}
+  {{ end }}
+
+  <div class="popup window" hidden>
+    <div class="title-bar">
+      <span class="title-bar-text">Open game?</span>
+      <button class="title-bar-close popup-close" type="button" aria-label="Close">×</button>
+    </div>
+    <div class="window-body">
+      <img class="popup-thumbnail" src="" alt="" hidden>
+      <p class="popup-title"></p>
+      <p class="popup-author"></p>
+      <p class="popup-platforms"></p>
+      <div class="window-buttons">
+        <a class="button popup-open" href="#" target="_blank" rel="noopener">Open</a>
+        <button class="button popup-close" type="button">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <a class="home" href="/" title="Home"><img src="/gifs/home.gif" alt="Home"></a>
+    <img class="mute" src="/gifs/speaker.gif" data-src-muted="/gifs/speaker-muted.gif" alt="Mute music" title="Mute music">
+    <img class="reroll" src="/gifs/die.gif" alt="Reroll games" title="Reroll">
+  </div>
+
+  <div class="bubbles">
+    {{ range .Params.games }}
+      {{ $entry := . }}
+      {{ range .games }}
+        {{ if .isVisible }}
+          {{/* thumbnails/<account>--<slug>.jpg next to this page, optional */}}
+          {{ $parts := split (strings.TrimPrefix "https://" .url) "/" }}
+          {{ $account := replace (index $parts 0) ".itch.io" "" }}
+          {{ $slug := index $parts 1 | default "" }}
+          {{ $thumbnail := $.Resources.GetMatch (printf "thumbnails/%s--%s.jpg" $account $slug) }}
+          <a class="bubble" href="{{ .url }}" target="_blank" rel="noopener" data-user="{{ $entry.user }}" data-platforms="{{ delimit (.platforms | default slice) "," }}" data-thumbnail="{{ with $thumbnail }}{{ .RelPermalink }}{{ end }}" hidden>
+            <img class="bubble-skin" src="{{ $.Params.bubbleImage }}" alt="">
+            <span class="bubble-title">{{ .title }}</span>
+            <span class="bubble-author">by {{ delimit .authors ", " }}</span>
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

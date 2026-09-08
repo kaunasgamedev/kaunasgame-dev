@@ -17,3 +17,8 @@ Build a production ready site under `public` dir:
 ```bash
 hugo --gc --minify --verbose
 ```
+
+Download itch game assets, needs `curl` and `ffmpeg` (see `scripts` dir):
+```bash
+./download-itch.sh https://account.itch.io/game-url-goes-here
+```
