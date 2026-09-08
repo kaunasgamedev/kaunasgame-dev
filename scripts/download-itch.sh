@@ -68,13 +68,19 @@ echo "    url: https://$account.itch.io"
 echo "    games:"
 echo "      - title: $title"
 echo "        url: $url"
+if [ "$thumbnail" != "none" ]; then
+  size=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0 "$thumbnail")
+  echo "        thumbnail:"
+  echo "          url: thumbnails/$thumbnail"
+  echo "          width: ${size%,*}"
+  echo "          height: ${size#*,}"
+fi
 echo "        authors:"
 printf '%s\n' "${authors//, /$'\n'}" | sed 's/^/          - /'
 if [ -n "$platforms" ]; then
   echo "        platforms:"
   printf '%s\n' "${platforms//, /$'\n'}" | sed 's/^/          - /'
 fi
-echo "        isVisible: true"
 
 echo >&2
 echo "thumbnail: $thumbnail" >&2

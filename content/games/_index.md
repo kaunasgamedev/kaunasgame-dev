@@ -23,89 +23,113 @@ games:
     games:
       - title: No Time to Reload
         url: https://pigeon-gang.itch.io/no-time-to-reload
+        thumbnail:
+          url: thumbnails/pigeon-gang--no-time-to-reload.jpg
+          width: 256
+          height: 203
         authors:
           - Pigeon Gang
         platforms:
           - windows
-        isVisible: true
 
   - user: Whitpi
     url: https://whitpi.itch.io
     games:
       - title: Whispers from Kalligon
         url: https://whitpi.itch.io/whispers-from-kalligon
+        thumbnail:
+          url: thumbnails/whitpi--whispers-from-kalligon.jpg
+          width: 256
+          height: 203
         authors:
           - Whitpi
         platforms:
           - windows
-        isVisible: true
 
   - user: Wizard Factory Studios
     url: https://wizard-factory-studios.itch.io
     games:
       - title: Astrum Nexus
         url: https://wizard-factory-studios.itch.io/astrum-nexus
+        thumbnail:
+          url: thumbnails/wizard-factory-studios--astrum-nexus.jpg
+          width: 256
+          height: 147
         authors:
           - Wizard Factory Studios
         platforms:
           - web
-        isVisible: true
 
   - user: ignasei
     url: https://ignasei.itch.io
     games:
       - title: Meal Quest
         url: https://ignasei.itch.io/meal-quest
+        thumbnail:
+          url: thumbnails/ignasei--meal-quest.jpg
+          width: 256
+          height: 203
         authors:
           - ignasei
         platforms:
           - web
-        isVisible: true
 
   - user: Martiszzz
     url: https://martiszzz.itch.io
     games:
       - title: Pheromone Protocol
         url: https://martiszzz.itch.io/pheromone-protocol
+        thumbnail:
+          url: thumbnails/martiszzz--pheromone-protocol.jpg
+          width: 256
+          height: 189
         authors:
           - Martiszzz
         platforms:
           - windows
           - web
-        isVisible: true
 
   - user: batareika
     url: https://batareikaa.itch.io
     games:
       - title: Roll or Die Trying
         url: https://batareikaa.itch.io/roll-or-die-trying
+        thumbnail:
+          url: thumbnails/batareikaa--roll-or-die-trying.jpg
+          width: 256
+          height: 203
         authors:
           - batareika
         platforms:
           - windows
-        isVisible: true
 
   - user: OrangeSpiral
     url: https://orangespiral.itch.io
     games:
       - title: Freds House
         url: https://orangespiral.itch.io/freds-house
+        thumbnail:
+          url: thumbnails/orangespiral--freds-house.jpg
+          width: 256
+          height: 203
         authors:
           - OrangeSpiral
         platforms:
           - windows
-        isVisible: true
 
   - user: DobilasJaunius
     url: https://dobilasjaunius.itch.io
     games:
       - title: MASKing Tape
         url: https://dobilasjaunius.itch.io/masking-tape
+        thumbnail:
+          url: thumbnails/dobilasjaunius--masking-tape.jpg
+          width: 256
+          height: 203
         authors:
           - DobilasJaunius
         platforms:
           - web
-        isVisible: true
 
   - user: da_jacksda
     url: https://da-jacksda.itch.io
@@ -116,24 +140,30 @@ games:
           - da_jacksda
         platforms:
           - windows
-        isVisible: true
 
   - user: ItsMaS
     url: https://itsmas.itch.io
     games:
       - title: Planet Spinner
         url: https://itsmas.itch.io/planet-spinner
+        thumbnail:
+          url: thumbnails/itsmas--planet-spinner.jpg
+          width: 256
+          height: 203
         authors:
           - ItsMaS
         platforms:
           - web
-        isVisible: true
 
   - user: Barzda
     url: https://barzda.itch.io
     games:
       - title: Don't Touch My Castle!
         url: https://barzda.itch.io/dont-touch-my-castle
+        thumbnail:
+          url: thumbnails/barzda--dont-touch-my-castle.jpg
+          width: 256
+          height: 203
         authors:
           - Barzda
           - Evaldas
@@ -141,35 +171,44 @@ games:
           - Gabrielius
         platforms:
           - web
-        isVisible: true
 
   - user: birdsofafeather
     url: https://birdsofafeather.itch.io
     games:
       - title: "Egle: The Queen of Snakes VN"
         url: https://birdsofafeather.itch.io/egle
+        thumbnail:
+          url: thumbnails/birdsofafeather--egle.jpg
+          width: 256
+          height: 230
         authors:
           - birdsofafeather
         platforms:
           - web
-        isVisible: true
 
   - user: DOMO
     url: https://mr-gnome.itch.io
     games:
       - title: ŽmogUs
         url: https://mr-gnome.itch.io/zmogus
+        thumbnail:
+          url: thumbnails/mr-gnome--zmogus.jpg
+          width: 256
+          height: 144
         authors:
           - DOMO
         platforms:
           - web
-        isVisible: true
 
   - user: SnoutUp
     url: https://snoutup.itch.io
     games:
       - title: Strugglesaurus
         url: https://snoutup.itch.io/strugglesaurus
+        thumbnail:
+          url: thumbnails/snoutup--strugglesaurus.jpg
+          width: 256
+          height: 203
         authors:
           - SnoutUp
           - Aurimas Garuolis
@@ -177,134 +216,182 @@ games:
         platforms:
           - windows
           - web
-        isVisible: true
 
   - user: Martynas
     url: https://onionas1.itch.io
     games:
       - title: Ship it out!
         url: https://onionas1.itch.io/ship-it-out
+        thumbnail:
+          url: thumbnails/onionas1--ship-it-out.jpg
+          width: 256
+          height: 203
         authors:
           - Martynas
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Lone moon
         url: https://onionas1.itch.io/lone-moon
+        thumbnail:
+          url: thumbnails/onionas1--lone-moon.jpg
+          width: 256
+          height: 57
         authors:
           - Martynas
         platforms:
           - windows
           - web
-        isVisible: true
 
   - user: skvizas
     url: https://skvizas.itch.io
     games:
       - title: Shroot
         url: https://skvizas.itch.io/shroot
+        thumbnail:
+          url: thumbnails/skvizas--shroot.jpg
+          width: 256
+          height: 267
         authors:
           - skvizas
         platforms:
           - web
-        isVisible: true
 
   - user: Zortog
     url: https://zortog.itch.io
     games:
       - title: Feed the Beast
         url: https://zortog.itch.io/feed-the-beast
+        thumbnail:
+          url: thumbnails/zortog--feed-the-beast.jpg
+          width: 256
+          height: 144
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Recursed
         url: https://zortog.itch.io/recursed
+        thumbnail:
+          url: thumbnails/zortog--recursed.jpg
+          width: 256
+          height: 156
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Lair of the Old God
         url: https://zortog.itch.io/lair-of-the-old-god
+        thumbnail:
+          url: thumbnails/zortog--lair-of-the-old-god.jpg
+          width: 256
+          height: 203
         authors:
           - Zortog
         platforms:
           - windows
           - macos
-        isVisible: true
       - title: Berry Jones
         url: https://zortog.itch.io/berry-jones
+        thumbnail:
+          url: thumbnails/zortog--berry-jones.jpg
+          width: 256
+          height: 160
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Lobster's fury
         url: https://zortog.itch.io/lobsters-fury
+        thumbnail:
+          url: thumbnails/zortog--lobsters-fury.jpg
+          width: 256
+          height: 179
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Midnight Drive
         url: https://zortog.itch.io/midnight-drive
+        thumbnail:
+          url: thumbnails/zortog--midnight-drive.jpg
+          width: 256
+          height: 143
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: What A Disaster!
         url: https://zortog.itch.io/what-a-disaster
+        thumbnail:
+          url: thumbnails/zortog--what-a-disaster.jpg
+          width: 256
+          height: 144
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Deep Below
         url: https://zortog.itch.io/deep-below
+        thumbnail:
+          url: thumbnails/zortog--deep-below.jpg
+          width: 256
+          height: 143
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Puzzle game
         url: https://zortog.itch.io/puzzle-game
+        thumbnail:
+          url: thumbnails/zortog--puzzle-game.jpg
+          width: 256
+          height: 131
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Cyber wars
         url: https://zortog.itch.io/cyber-wars
+        thumbnail:
+          url: thumbnails/zortog--cyber-wars.jpg
+          width: 256
+          height: 144
         authors:
           - Zortog
         platforms:
           - windows
           - macos
-        isVisible: true
       - title: Laser Defender
         url: https://zortog.itch.io/laser-defender
+        thumbnail:
+          url: thumbnails/zortog--laser-defender.jpg
+          width: 256
+          height: 161
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
       - title: Meltdown
         url: https://zortog.itch.io/meltdown
+        thumbnail:
+          url: thumbnails/zortog--meltdown.jpg
+          width: 256
+          height: 192
         authors:
           - Zortog
         platforms:
           - web
-        isVisible: true
 
   - user: SIMMIX
     url: https://simmix-dev.itch.io
     games:
       - title: "Chibo: Journey of Fate"
         url: https://simmix-dev.itch.io/chibo-journey-of-fate
+        thumbnail:
+          url: thumbnails/simmix-dev--chibo-journey-of-fate.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
           - Davide Turini
@@ -315,75 +402,105 @@ games:
           - JakeGreen
         platforms:
           - windows
-        isVisible: true
       - title: Capitalism Cuties
         url: https://simmix-dev.itch.io/capitalism-cuties
+        thumbnail:
+          url: thumbnails/simmix-dev--capitalism-cuties.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: CV, Please!
         url: https://simmix-dev.itch.io/cv-please
+        thumbnail:
+          url: thumbnails/simmix-dev--cv-please.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: Arkaan's Awakening
         url: https://simmix-dev.itch.io/arkaans-awakening
+        thumbnail:
+          url: thumbnails/simmix-dev--arkaans-awakening.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Whispering Flames
         url: https://simmix-dev.itch.io/whispering-flames
+        thumbnail:
+          url: thumbnails/simmix-dev--whispering-flames.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: The Zany Zzz-Zappers
         url: https://simmix-dev.itch.io/the-zany-zzz-zappers
+        thumbnail:
+          url: thumbnails/simmix-dev--the-zany-zzz-zappers.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: Waste Warriors Academy
         url: https://simmix-dev.itch.io/waste-warriors-academy
+        thumbnail:
+          url: thumbnails/simmix-dev--waste-warriors-academy.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: Alzahir
         url: https://simmix-dev.itch.io/alzahir
+        thumbnail:
+          url: thumbnails/simmix-dev--alzahir.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: Escape The Galaxy
         url: https://simmix-dev.itch.io/escape-the-galaxy
+        thumbnail:
+          url: thumbnails/simmix-dev--escape-the-galaxy.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
         platforms:
           - web
-        isVisible: true
       - title: '"Making Games" Under Pressure'
         url: https://simmix-dev.itch.io/making-games-under-pressure
+        thumbnail:
+          url: thumbnails/simmix-dev--making-games-under-pressure.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
           - OliFrys
           - EnricoAiello-Work
         platforms:
           - web
-        isVisible: true
       - title: Necromancer Tomb
         url: https://simmix-dev.itch.io/necromancer-tomb
+        thumbnail:
+          url: thumbnails/simmix-dev--necromancer-tomb.jpg
+          width: 256
+          height: 203
         authors:
           - SIMMIX
           - Nothing Serious
@@ -392,400 +509,562 @@ games:
           - windows
           - macos
           - linux
-        isVisible: true
 
   - user: Stalker Studios
     url: https://stalker-studios.itch.io
     games:
       - title: Welcome Home
         url: https://stalker-studios.itch.io/welcome-home
+        thumbnail:
+          url: thumbnails/stalker-studios--welcome-home.jpg
+          width: 256
+          height: 203
         authors:
           - Stalker Studios
         platforms:
           - windows
-        isVisible: true
 
   - user: Vidas Games
     url: https://vidas-salavejus.itch.io
     games:
       - title: Parasomnia Verum 2
         url: https://vidas-salavejus.itch.io/parasomnia-verum-2-demo
+        thumbnail:
+          url: thumbnails/vidas-salavejus--parasomnia-verum-2-demo.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Vivere Retro
         url: https://vidas-salavejus.itch.io/vivere-retro
+        thumbnail:
+          url: thumbnails/vidas-salavejus--vivere-retro.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Banana Blood
         url: https://vidas-salavejus.itch.io/banana-blood
+        thumbnail:
+          url: thumbnails/vidas-salavejus--banana-blood.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Obscure Horrors
         url: https://vidas-salavejus.itch.io/obscure-horrors
+        thumbnail:
+          url: thumbnails/vidas-salavejus--obscure-horrors.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: From Me, To You
         url: https://vidas-salavejus.itch.io/from-me-to-you
+        thumbnail:
+          url: thumbnails/vidas-salavejus--from-me-to-you.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: "Timore 6: The Cadaver"
         url: https://vidas-salavejus.itch.io/timore-6-the-cadaver
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-6-the-cadaver.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Clown Is Hungry
         url: https://vidas-salavejus.itch.io/clown-is-hungry
+        thumbnail:
+          url: thumbnails/vidas-salavejus--clown-is-hungry.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore Narhelma
         url: https://vidas-salavejus.itch.io/timore-narhelma
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-narhelma.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Sorrow Asylum 3
         url: https://vidas-salavejus.itch.io/sorrow-asylum-3
+        thumbnail:
+          url: thumbnails/vidas-salavejus--sorrow-asylum-3.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Smile Simulation
         url: https://vidas-salavejus.itch.io/smile-simulation
+        thumbnail:
+          url: thumbnails/vidas-salavejus--smile-simulation.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Dye The Bunny 2
         url: https://vidas-salavejus.itch.io/dye-the-bunny-2
+        thumbnail:
+          url: thumbnails/vidas-salavejus--dye-the-bunny-2.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Analog Sammelot
         url: https://vidas-salavejus.itch.io/analog-sammelot
+        thumbnail:
+          url: thumbnails/vidas-salavejus--analog-sammelot.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Samantha
         url: https://vidas-salavejus.itch.io/samantha-demo
+        thumbnail:
+          url: thumbnails/vidas-salavejus--samantha-demo.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Void Home
         url: https://vidas-salavejus.itch.io/void-home
+        thumbnail:
+          url: thumbnails/vidas-salavejus--void-home.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Gratiarum
         url: https://vidas-salavejus.itch.io/gratiarum
+        thumbnail:
+          url: thumbnails/vidas-salavejus--gratiarum.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Insomnis Experiment
         url: https://vidas-salavejus.itch.io/insomnis-experiment
+        thumbnail:
+          url: thumbnails/vidas-salavejus--insomnis-experiment.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Umbra Halloween
         url: https://vidas-salavejus.itch.io/umbra-halloween
+        thumbnail:
+          url: thumbnails/vidas-salavejus--umbra-halloween.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Sorrow Asylum 2
         url: https://vidas-salavejus.itch.io/sorrow-asylum-2
+        thumbnail:
+          url: thumbnails/vidas-salavejus--sorrow-asylum-2.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Sorrow Asylum
         url: https://vidas-salavejus.itch.io/sorrow-asylum
+        thumbnail:
+          url: thumbnails/vidas-salavejus--sorrow-asylum.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Planeta 55
         url: https://vidas-salavejus.itch.io/planeta-55
+        thumbnail:
+          url: thumbnails/vidas-salavejus--planeta-55.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Dye The Bunny
         url: https://vidas-salavejus.itch.io/dye-the-bunny
+        thumbnail:
+          url: thumbnails/vidas-salavejus--dye-the-bunny.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Nox Timore Remake
         url: https://vidas-salavejus.itch.io/nox-timore-remake
+        thumbnail:
+          url: thumbnails/vidas-salavejus--nox-timore-remake.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore Remake
         url: https://vidas-salavejus.itch.io/timore-remake
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-remake.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore Redo
         url: https://vidas-salavejus.itch.io/timore-redo
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-redo.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Parasomnia Verum
         url: https://vidas-salavejus.itch.io/parasomnia-verum
+        thumbnail:
+          url: thumbnails/vidas-salavejus--parasomnia-verum.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Daardoa
         url: https://vidas-salavejus.itch.io/daardoa
+        thumbnail:
+          url: thumbnails/vidas-salavejus--daardoa.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore Solum
         url: https://vidas-salavejus.itch.io/timore-solum
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-solum.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Martyrdom
         url: https://vidas-salavejus.itch.io/martyrdom
+        thumbnail:
+          url: thumbnails/vidas-salavejus--martyrdom.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: "Cave of Illusions: Twistyland"
         url: https://vidas-salavejus.itch.io/cave-of-illusions-twistyland
+        thumbnail:
+          url: thumbnails/vidas-salavejus--cave-of-illusions-twistyland.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Chimney Prowler
         url: https://vidas-salavejus.itch.io/chimney-prowler
+        thumbnail:
+          url: thumbnails/vidas-salavejus--chimney-prowler.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Don't Drop The Soap 2
         url: https://vidas-salavejus.itch.io/dont-drop-the-soap-2
+        thumbnail:
+          url: thumbnails/vidas-salavejus--dont-drop-the-soap-2.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore 6
         url: https://vidas-salavejus.itch.io/timore-6
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-6.jpg
+          width: 256
+          height: 256
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Dia
         url: https://vidas-salavejus.itch.io/dia
+        thumbnail:
+          url: thumbnails/vidas-salavejus--dia.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Theater Unrest
         url: https://vidas-salavejus.itch.io/theater-unrest
+        thumbnail:
+          url: thumbnails/vidas-salavejus--theater-unrest.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Solumcess
         url: https://vidas-salavejus.itch.io/solumcess
+        thumbnail:
+          url: thumbnails/vidas-salavejus--solumcess.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Balavour
         url: https://vidas-salavejus.itch.io/balavour
+        thumbnail:
+          url: thumbnails/vidas-salavejus--balavour.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Cave of Illusions
         url: https://vidas-salavejus.itch.io/cave-of-illusions
+        thumbnail:
+          url: thumbnails/vidas-salavejus--cave-of-illusions.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Necro Immortallis
         url: https://vidas-salavejus.itch.io/necro-immortallis
+        thumbnail:
+          url: thumbnails/vidas-salavejus--necro-immortallis.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: A Dream For Aaron
         url: https://vidas-salavejus.itch.io/a-dream-for-aaron
+        thumbnail:
+          url: thumbnails/vidas-salavejus--a-dream-for-aaron.jpg
+          width: 256
+          height: 256
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore 5 The Flood DLC
         url: https://vidas-salavejus.itch.io/timore-5-the-flood
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-5-the-flood.jpg
+          width: 256
+          height: 256
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore 5
         url: https://vidas-salavejus.itch.io/timore-5
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-5.jpg
+          width: 256
+          height: 256
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Guardian Of December
         url: https://vidas-salavejus.itch.io/guardian-of-december-introduction
+        thumbnail:
+          url: thumbnails/vidas-salavejus--guardian-of-december-introduction.jpg
+          width: 256
+          height: 256
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Timore Inferno
         url: https://vidas-salavejus.itch.io/timore-inferno
+        thumbnail:
+          url: thumbnails/vidas-salavejus--timore-inferno.jpg
+          width: 256
+          height: 136
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: GentleMoon 2
         url: https://vidas-salavejus.itch.io/gentlemoon-2
+        thumbnail:
+          url: thumbnails/vidas-salavejus--gentlemoon-2.jpg
+          width: 256
+          height: 144
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Ossa
         url: https://vidas-salavejus.itch.io/ossa
+        thumbnail:
+          url: thumbnails/vidas-salavejus--ossa.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
         platforms:
           - windows
-        isVisible: true
       - title: Munitum
         url: https://vidas-salavejus.itch.io/munitum
+        thumbnail:
+          url: thumbnails/vidas-salavejus--munitum.jpg
+          width: 256
+          height: 203
         authors:
           - Vidas Games
           - Aaron Wise
         platforms:
           - windows
-        isVisible: true
 
   - user: manogugas
     url: https://manogugas.itch.io
     games:
       - title: Breaking Rails
         url: https://manogugas.itch.io/breaking-rails
+        thumbnail:
+          url: thumbnails/manogugas--breaking-rails.jpg
+          width: 256
+          height: 144
         authors:
           - manogugas
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Intriga su Ingrida
         url: https://manogugas.itch.io/intriga-su-ingrida
+        thumbnail:
+          url: thumbnails/manogugas--intriga-su-ingrida.jpg
+          width: 256
+          height: 180
         authors:
           - manogugas
         platforms:
           - web
-        isVisible: true
       - title: Stuck In A Loop Cafe
         url: https://manogugas.itch.io/stuck-in-a-loop-cafe-ludum-dare-47
+        thumbnail:
+          url: thumbnails/manogugas--stuck-in-a-loop-cafe-ludum-dare-47.jpg
+          width: 256
+          height: 204
         authors:
           - manogugas
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Shotar
         url: https://manogugas.itch.io/shotar
+        thumbnail:
+          url: thumbnails/manogugas--shotar.jpg
+          width: 256
+          height: 142
         authors:
           - manogugas
         platforms:
           - web
-        isVisible: true
       - title: Dimenser
         url: https://manogugas.itch.io/dimenser
+        thumbnail:
+          url: thumbnails/manogugas--dimenser.jpg
+          width: 256
+          height: 144
         authors:
           - manogugas
         platforms:
           - web
-        isVisible: true
       - title: Asteroid Showers
         url: https://manogugas.itch.io/asteroid-showers
+        thumbnail:
+          url: thumbnails/manogugas--asteroid-showers.jpg
+          width: 256
+          height: 203
         authors:
           - manogugas
           - PRMantis
         platforms:
           - web
-        isVisible: true
 
   - user: Ravernt
     url: https://manogugas.itch.io
     games:
       - title: Deep Below
         url: https://ravernt.itch.io/deep-below
+        thumbnail:
+          url: thumbnails/ravernt--deep-below.jpg
+          width: 256
+          height: 144
         authors:
           - Ravernt
           - ArmandasLeo
@@ -795,9 +1074,12 @@ games:
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Mask Frenzy
         url: https://ravernt.itch.io/mask-frenzy
+        thumbnail:
+          url: thumbnails/ravernt--mask-frenzy.jpg
+          width: 256
+          height: 203
         authors:
           - Ravernt
           - airixs
@@ -805,72 +1087,96 @@ games:
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Chuckles or Knuckles
         url: https://ravernt.itch.io/chuckles-or-knuckles
+        thumbnail:
+          url: thumbnails/ravernt--chuckles-or-knuckles.jpg
+          width: 256
+          height: 107
         authors:
           - Ravernt
           - airixs
           - ArmandasLeo
         platforms:
           - web
-        isVisible: true
 
   - user: airixs
     url: https://pixelktu.itch.io
     games:
       - title: Tap & Fly
         url: https://airixs.itch.io/tapfly
+        thumbnail:
+          url: thumbnails/airixs--tapfly.jpg
+          width: 256
+          height: 203
         authors:
           - airixs
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Dichroma
         url: https://airixs.itch.io/dichroma
+        thumbnail:
+          url: thumbnails/airixs--dichroma.jpg
+          width: 256
+          height: 203
         authors:
           - airixs
         platforms:
           - windows
           - web
-        isVisible: true
       - title: Unstable Mage
         url: https://airixs.itch.io/unbalanced-magic
+        thumbnail:
+          url: thumbnails/airixs--unbalanced-magic.jpg
+          width: 256
+          height: 203
         authors:
           - airixs
         platforms:
           - windows
-        isVisible: true
       - title: Gale archer
         url: https://airixs.itch.io/gale-archer
+        thumbnail:
+          url: thumbnails/airixs--gale-archer.jpg
+          width: 256
+          height: 203
         authors:
           - airixs
         platforms:
           - web
-        isVisible: true
       - title: Petrified
         url: https://airixs.itch.io/petrified
+        thumbnail:
+          url: thumbnails/airixs--petrified.jpg
+          width: 256
+          height: 203
         authors:
           - airixs
         platforms:
           - windows
-        isVisible: true
       - title: Crystal cataclysm
         url: https://airixs.itch.io/crystal-cataclysm
+        thumbnail:
+          url: thumbnails/airixs--crystal-cataclysm.jpg
+          width: 256
+          height: 203
         authors:
           - airixs
           - a96t27
           - ArmandasLeo
         platforms:
           - web
-        isVisible: true
 
   - user: PixelKTU
     url: https://pixelktu.itch.io
     games:
       - title: Brootal
         url: https://pixelktu.itch.io/brootal
+        thumbnail:
+          url: thumbnails/pixelktu--brootal.jpg
+          width: 256
+          height: 220
         authors:
           - Audrius Barauskis
           - Arvydas Mazauskas
@@ -879,157 +1185,215 @@ games:
           - Armandas Leonavičius
         platforms:
           - web
-        isVisible: true
       - title: Beaver Fever WEB
         url: https://pixelktu.itch.io/beaver-fever-web
+        thumbnail:
+          url: thumbnails/pixelktu--beaver-fever-web.jpg
+          width: 256
+          height: 225
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Duality Ward
         url: https://pixelktu.itch.io/duality-ward
+        thumbnail:
+          url: thumbnails/pixelktu--duality-ward.jpg
+          width: 256
+          height: 223
         authors:
           - PixelKTU
         platforms:
           - web
           - windows
-        isVisible: true
       - title: Donut Shop
         url: https://pixelktu.itch.io/donut-shop
+        thumbnail:
+          url: thumbnails/pixelktu--donut-shop.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Clickfort island
         url: https://pixelktu.itch.io/clickfort-island
+        thumbnail:
+          url: thumbnails/pixelktu--clickfort-island.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - windows
-        isVisible: true
       - title: Rogue-like idle clicker prototype
         url: https://pixelktu.itch.io/rogue-like-idle-clicker-prototype
+        thumbnail:
+          url: thumbnails/pixelktu--rogue-like-idle-clicker-prototype.jpg
+          width: 256
+          height: 184
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Beaver Fever
         url: https://pixelktu.itch.io/beaver-fever
+        thumbnail:
+          url: thumbnails/pixelktu--beaver-fever.jpg
+          width: 256
+          height: 225
         authors:
           - PixelKTU
         platforms:
           - windows
-        isVisible: true
       - title: Unstoppable
         url: https://pixelktu.itch.io/unstoppable-mini-jam-6
+        thumbnail:
+          url: thumbnails/pixelktu--unstoppable-mini-jam-6.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Unstoppable Bolder
         url: https://pixelktu.itch.io/unstoppable-bolder
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Kamikaze
         url: https://pixelktu.itch.io/kamikaze-mini-jam-5
+        thumbnail:
+          url: thumbnails/pixelktu--kamikaze-mini-jam-5.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: MothQuest
         url: https://pixelktu.itch.io/mothquest
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Heat is life
         url: https://pixelktu.itch.io/bby-its-cold-outside
+        thumbnail:
+          url: thumbnails/pixelktu--bby-its-cold-outside.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Forger3000
         url: https://pixelktu.itch.io/forger3000
+        thumbnail:
+          url: thumbnails/pixelktu--forger3000.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: TemperatureMan
         url: https://pixelktu.itch.io/temperatureman
+        thumbnail:
+          url: thumbnails/pixelktu--temperatureman.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Don't go outside
         url: https://pixelktu.itch.io/dont-go-outside
+        thumbnail:
+          url: thumbnails/pixelktu--dont-go-outside.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Survive retardness
         url: https://pixelktu.itch.io/survive-retardnes
+        thumbnail:
+          url: thumbnails/pixelktu--survive-retardnes.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Ghost Movement Demo
         url: https://pixelktu.itch.io/ghost-demo
+        thumbnail:
+          url: thumbnails/pixelktu--ghost-demo.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Fish miner
         url: https://pixelktu.itch.io/fish-miner
+        thumbnail:
+          url: thumbnails/pixelktu--fish-miner.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Fishing with autism
         url: https://pixelktu.itch.io/fishing-with-autism
+        thumbnail:
+          url: thumbnails/pixelktu--fishing-with-autism.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: BreadDead
         url: https://pixelktu.itch.io/breaddead
+        thumbnail:
+          url: thumbnails/pixelktu--breaddead.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Disable The Bread
         url: https://pixelktu.itch.io/disable-the-bread
+        thumbnail:
+          url: thumbnails/pixelktu--disable-the-bread.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Disabled Bread
         url: https://pixelktu.itch.io/disabled-bread
+        thumbnail:
+          url: thumbnails/pixelktu--disabled-bread.jpg
+          width: 256
+          height: 203
         authors:
           - PixelKTU
         platforms:
           - web
-        isVisible: true
       - title: Lost In Memories
         url: https://pixelktu.itch.io/lost-in-memories-ggj2021
+        thumbnail:
+          url: thumbnails/pixelktu--lost-in-memories-ggj2021.jpg
+          width: 256
+          height: 251
         authors:
           - Vytautas Gružauskas
           - Martynas Šiškauskas
@@ -1046,9 +1410,12 @@ games:
           - web
           - windows
           - linux
-        isVisible: true
       - title: Root Cause
         url: https://pixelktu.itch.io/root-cause
+        thumbnail:
+          url: thumbnails/pixelktu--root-cause.jpg
+          width: 256
+          height: 196
         authors:
           - Vytautas Gružauskas
           - Mykolas Benjaminas Meškas
@@ -1058,111 +1425,144 @@ games:
           - Kamilė Šmatavičiūtė
         platforms:
           - windows
-        isVisible: true
 
   - user: ArmandasLeo
     url: https://pixelktu.itch.io
     games:
       - title: Freezing space
         url: https://armandasleo.itch.io/freezing-space
+        thumbnail:
+          url: thumbnails/armandasleo--freezing-space.jpg
+          width: 256
+          height: 203
         authors:
           - Armandas Leonavičius
         platforms:
           - web
-        isVisible: true
       - title: People in produce
         url: https://armandasleo.itch.io/people-in-produce
+        thumbnail:
+          url: thumbnails/armandasleo--people-in-produce.jpg
+          width: 256
+          height: 203
         authors:
           - ArmandasLeo
           - a96t27
           - airixs
         platforms:
           - web
-        isVisible: true
 
   - user: WildBeanGames
     url: https://wildbeangames.itch.io
     games:
       - title: Very Good Pixel Game
         url: https://wildbeangames.itch.io/very-good-pixel-game
+        thumbnail:
+          url: thumbnails/wildbeangames--very-good-pixel-game.jpg
+          width: 256
+          height: 206
         authors:
           - WildBeanGames
         platforms:
           - web
-        isVisible: true
       - title: Run Run
         url: https://wildbeangames.itch.io/run-run
+        thumbnail:
+          url: thumbnails/wildbeangames--run-run.jpg
+          width: 256
+          height: 165
         authors:
           - WildBeanGames
         platforms:
           - web
           - windows
-        isVisible: true
       - title: Color Chamber
         url: https://wildbeangames.itch.io/color-change
+        thumbnail:
+          url: thumbnails/wildbeangames--color-change.jpg
+          width: 256
+          height: 160
         authors:
           - WildBeanGames
         platforms:
           - windows
-        isVisible: true
       - title: Animal Rescue
         url: https://wildbeangames.itch.io/animal-rescue
+        thumbnail:
+          url: thumbnails/wildbeangames--animal-rescue.jpg
+          width: 256
+          height: 251
         authors:
           - WildBeanGames
         platforms:
           - windows
-        isVisible: true
 
   - user: edd
     url: https://eddas.itch.io
     games:
       - title: SPAINT
         url: https://eddas.itch.io/spaint
+        thumbnail:
+          url: thumbnails/eddas--spaint.jpg
+          width: 256
+          height: 203
         authors:
           - edd
           - RokasDan
         platforms:
           - web
           - windows
-        isVisible: true
 
   - user: RIEVĖS
     url: https://rieves.itch.io
     games:
       - title: Kaimiečio Išleistuvės
         url: https://rieves.itch.io/kaimiecio-isleistuves
+        thumbnail:
+          url: thumbnails/rieves--kaimiecio-isleistuves.jpg
+          width: 256
+          height: 144
         authors:
           - RIEVĖS
         platforms:
           - web
           - windows
-        isVisible: true
       - title: Žalio Kiosko Patirtis
         url: https://rieves.itch.io/zalio-kiosko-patirtis
+        thumbnail:
+          url: thumbnails/rieves--zalio-kiosko-patirtis.jpg
+          width: 256
+          height: 128
         authors:
           - RIEVĖS
         platforms:
           - web
           - windows
-        isVisible: true
 
   - user: CHARK Studio
     url: https://charkio.itch.io
     games:
       - title: Unveiling
         url: https://charkio.itch.io/unveiling
+        thumbnail:
+          url: thumbnails/charkio--unveiling.jpg
+          width: 256
+          height: 256
         authors:
           - CHARK Studio
         platforms:
           - windows
           - macos
-        isVisible: true
 
   - user: ShortE
     url: https://shorte.itch.io
     games:
       - title: Rooted Warden
         url: https://shorte.itch.io/rooted-warden
+        thumbnail:
+          url: thumbnails/shorte--rooted-warden.jpg
+          width: 256
+          height: 137
         authors:
           - ShortE
           - edd
@@ -1172,5 +1572,4 @@ games:
           - Vaidas
         platforms:
           - windows
-        isVisible: true
 ---

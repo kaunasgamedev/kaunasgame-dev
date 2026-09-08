@@ -37,18 +37,23 @@
     {{ range .Params.games }}
       {{ $entry := . }}
       {{ range .games }}
-        {{ if .isVisible }}
-          {{/* thumbnails/<account>--<slug>.jpg next to this page, optional */}}
-          {{ $parts := split (strings.TrimPrefix "https://" .url) "/" }}
-          {{ $account := replace (index $parts 0) ".itch.io" "" }}
-          {{ $slug := index $parts 1 | default "" }}
-          {{ $thumbnail := $.Resources.GetMatch (printf "thumbnails/%s--%s.jpg" $account $slug) }}
-          <a class="bubble" href="{{ .url }}" target="_blank" rel="noopener" data-user="{{ $entry.user }}" data-platforms="{{ delimit (.platforms | default slice) "," }}" data-thumbnail="{{ with $thumbnail }}{{ .RelPermalink }}{{ end }}" hidden>
-            <img class="bubble-skin" src="{{ $.Params.bubbleImage }}" alt="">
-            <span class="bubble-title">{{ .title }}</span>
-            <span class="bubble-author">by {{ delimit .authors ", " }}</span>
-          </a>
+        {{ $thumbnail := "" }}
+        {{ $width := "" }}
+        {{ $height := "" }}
+        {{ with .thumbnail }}
+          {{ with $.Resources.GetMatch .url }}
+            {{ $thumbnail = .RelPermalink }}
+            {{ $width = .Width }}
+            {{ $height = .Height }}
+          {{ end }}
+          {{ $width = .width | default $width }}
+          {{ $height = .height | default $height }}
         {{ end }}
+        <a class="bubble" href="{{ .url }}" target="_blank" rel="noopener" data-user="{{ $entry.user }}" data-platforms="{{ delimit (.platforms | default slice) "," }}" data-thumbnail="{{ $thumbnail }}" data-thumbnail-width="{{ $width }}" data-thumbnail-height="{{ $height }}" hidden>
+          <img class="bubble-skin" src="{{ $.Params.bubbleImage }}" alt="">
+          <span class="bubble-title">{{ .title }}</span>
+          <span class="bubble-author">by {{ delimit .authors ", " }}</span>
+        </a>
       {{ end }}
     {{ end }}
   </div>

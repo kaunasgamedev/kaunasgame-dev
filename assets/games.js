@@ -693,6 +693,8 @@
 
       // Blank until the new one is in, then fades in via css
       thumbnailElement.hidden = thumbnail === ''
+      thumbnailElement.width = bubbleElement.dataset.thumbnailWidth
+      thumbnailElement.height = bubbleElement.dataset.thumbnailHeight
       thumbnailElement.classList.remove('loaded')
       thumbnailElement.onload = function () {
         thumbnailElement.classList.add('loaded')
