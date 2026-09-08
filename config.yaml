@@ -1,11 +1,10 @@
 disableHugoGeneratorInject: true
 disableKinds:
   - taxonomy
-  - taxonomyTerm
+  - term
   - RSS
-  - sitemap
 
-languageCode: en-us
+locale: en-us
 baseURL: https://kaunasgame.dev
 buildFuture: true
 
