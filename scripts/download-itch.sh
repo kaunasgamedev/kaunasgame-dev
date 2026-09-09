@@ -22,7 +22,7 @@ slug="${BASH_REMATCH[2]}"
 page=$(curl -fsSL -A "Mozilla/5.0 (kaunasgame.dev)" "$url" | tr -d '\n')
 
 unescape() {
-  sed 's/&amp;/\&/g; s/&#39;/'"'"'/g; s/&quot;/"/g; s/&lt;/</g; s/&gt;/>/g'
+  sed 's/&amp;/\&/g; s/&#0*39;/'"'"'/g; s/&quot;/"/g; s/&lt;/</g; s/&gt;/>/g'
 }
 
 # Link texts of one info table row, comma separated
@@ -54,7 +54,8 @@ cover=$(printf '%s' "$page" | grep -o '<meta content="[^"]*" property="og:image"
 if [ -n "$cover" ]; then
   thumbnail="$account--$slug.jpg"
   curl -fsSL -A "Mozilla/5.0 (kaunasgame.dev)" "$cover" -o cover.tmp
-  ffmpeg -loglevel error -y -i cover.tmp -vf 'scale=256:-2' -q:v 4 "$thumbnail"
+  # Animated gif covers: first frame only
+  ffmpeg -loglevel error -y -i cover.tmp -frames:v 1 -vf 'scale=256:-2' -q:v 4 "$thumbnail"
   rm cover.tmp
 fi
 

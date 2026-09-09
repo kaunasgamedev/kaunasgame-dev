@@ -154,6 +154,207 @@ games:
           - ItsMaS
         platforms:
           - web
+      - title: Rat Below
+        url: https://itsmas.itch.io/rat-below
+        thumbnail:
+          url: thumbnails/itsmas--rat-below.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Void Prison
+        url: https://itsmas.itch.io/void-prison
+        thumbnail:
+          url: thumbnails/itsmas--void-prison.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+          - Helzinko
+        platforms:
+          - web
+      - title: Shroomer Caves
+        url: https://itsmas.itch.io/magic-rain
+        thumbnail:
+          url: thumbnails/itsmas--magic-rain.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+          - Helzinko
+        platforms:
+          - web
+      - title: Gammafication
+        url: https://itsmas.itch.io/gammafied
+        thumbnail:
+          url: thumbnails/itsmas--gammafied.jpg
+          width: 256
+          height: 198
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Deep way down
+        url: https://itsmas.itch.io/deep-way-down
+        thumbnail:
+          url: thumbnails/itsmas--deep-way-down.jpg
+          width: 256
+          height: 184
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Rapid rabbits
+        url: https://itsmas.itch.io/rapid-rabbit
+        thumbnail:
+          url: thumbnails/itsmas--rapid-rabbit.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+          - hangeris
+        platforms:
+          - web
+      - title: Gamma
+        url: https://itsmas.itch.io/gamma
+        thumbnail:
+          url: thumbnails/itsmas--gamma.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Something
+        url: https://itsmas.itch.io/something
+        thumbnail:
+          url: thumbnails/itsmas--something.jpg
+          width: 256
+          height: 144
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Plane accordingly
+        url: https://itsmas.itch.io/plane-acco
+        thumbnail:
+          url: thumbnails/itsmas--plane-acco.jpg
+          width: 256
+          height: 256
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Totem Clash
+        url: https://itsmas.itch.io/totemclash
+        thumbnail:
+          url: thumbnails/itsmas--totemclash.jpg
+          width: 256
+          height: 206
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: AstroParcel
+        url: https://itsmas.itch.io/astroparcel
+        thumbnail:
+          url: thumbnails/itsmas--astroparcel.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Magic Cook
+        url: https://itsmas.itch.io/magic-cook
+        thumbnail:
+          url: thumbnails/itsmas--magic-cook.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Power Loop
+        url: https://itsmas.itch.io/power-loop
+        thumbnail:
+          url: thumbnails/itsmas--power-loop.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Away
+        url: https://itsmas.itch.io/away
+        thumbnail:
+          url: thumbnails/itsmas--away.jpg
+          width: 256
+          height: 144
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+          - windows
+      - title: Sloop
+        url: https://itsmas.itch.io/sloop
+        thumbnail:
+          url: thumbnails/itsmas--sloop.jpg
+          width: 256
+          height: 136
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+          - windows
+      - title: Botanico
+        url: https://itsmas.itch.io/automatur
+        thumbnail:
+          url: thumbnails/itsmas--automatur.jpg
+          width: 256
+          height: 194
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+          - windows
+          - macos
+          - linux
+      - title: MonoDash
+        url: https://itsmas.itch.io/monodash
+        thumbnail:
+          url: thumbnails/itsmas--monodash.jpg
+          width: 256
+          height: 204
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+          - windows
+          - macos
+          - linux
+      - title: ORBid
+        url: https://itsmas.itch.io/orbid
+        thumbnail:
+          url: thumbnails/itsmas--orbid.jpg
+          width: 256
+          height: 144
+        authors:
+          - ItsMaS
+        platforms:
+          - web
+      - title: Love Inc.
+        url: https://itsmas.itch.io/love-inc
+        thumbnail:
+          url: thumbnails/itsmas--love-inc.jpg
+          width: 256
+          height: 228
+        authors:
+          - ItsMaS
+        platforms:
+          - web
 
   - user: Barzda
     url: https://barzda.itch.io
@@ -197,6 +398,49 @@ games:
           height: 144
         authors:
           - DOMO
+        platforms:
+          - web
+      - title: Gambling Survivors
+        url: https://mr-gnome.itch.io/gambling-survivor
+        thumbnail:
+          url: thumbnails/mr-gnome--gambling-survivor.jpg
+          width: 256
+          height: 176
+        authors:
+          - DOMO
+          - ShortE
+          - GColde
+        platforms:
+          - web
+      - title: PowerSupply
+        url: https://mr-gnome.itch.io/powersupply
+        thumbnail:
+          url: thumbnails/mr-gnome--powersupply.jpg
+          width: 256
+          height: 134
+        authors:
+          - DOMO
+        platforms:
+          - web
+      - title: totally-snake
+        url: https://mr-gnome.itch.io/totally-snake
+        thumbnail:
+          url: thumbnails/mr-gnome--totally-snake.jpg
+          width: 256
+          height: 196
+        authors:
+          - DOMO
+        platforms:
+          - web
+      - title: HeXD
+        url: https://mr-gnome.itch.io/hexd
+        thumbnail:
+          url: thumbnails/mr-gnome--hexd.jpg
+          width: 256
+          height: 256
+        authors:
+          - DOMO
+          - RollingRocc
         platforms:
           - web
 
@@ -1572,4 +1816,160 @@ games:
           - Vaidas
         platforms:
           - windows
+      - title: Shopping List
+        url: https://shorte.itch.io/shopping-list
+        thumbnail:
+          url: thumbnails/shorte--shopping-list.jpg
+          width: 256
+          height: 204
+        authors:
+          - ShortE
+          - ItsMaS
+          - GColde
+      - title: Dungeon Crawler
+        url: https://shorte.itch.io/dungeon-crawler
+        thumbnail:
+          url: thumbnails/shorte--dungeon-crawler.jpg
+          width: 256
+          height: 196
+        authors:
+          - ShortE
+        platforms:
+          - windows
+      - title: "Santa's Business"
+        url: https://shorte.itch.io/santas-business
+        thumbnail:
+          url: thumbnails/shorte--santas-business.jpg
+          width: 256
+          height: 192
+        authors:
+          - ShortE
+        platforms:
+          - windows
+      - title: Boris the Cat
+        url: https://shorte.itch.io/boris-the-cat
+        thumbnail:
+          url: thumbnails/shorte--boris-the-cat.jpg
+          width: 256
+          height: 176
+        authors:
+          - ShortE
+        platforms:
+          - windows
+      - title: Duo
+        url: https://shorte.itch.io/duo
+        thumbnail:
+          url: thumbnails/shorte--duo.jpg
+          width: 256
+          height: 182
+        authors:
+          - ShortE
+        platforms:
+          - windows
+      - title: Heat control
+        url: https://shorte.itch.io/heat-control
+        thumbnail:
+          url: thumbnails/shorte--heat-control.jpg
+          width: 256
+          height: 218
+        authors:
+          - ShortE
+        platforms:
+          - web
+      - title: The lost Shoe
+        url: https://shorte.itch.io/the-last-shoe
+        thumbnail:
+          url: thumbnails/shorte--the-last-shoe.jpg
+          width: 256
+          height: 190
+        authors:
+          - ShortE
+        platforms:
+          - web
+      - title: Keep the Light
+        url: https://shorte.itch.io/keep-the-light
+        thumbnail:
+          url: thumbnails/shorte--keep-the-light.jpg
+          width: 256
+          height: 182
+        authors:
+          - ShortE
+        platforms:
+          - windows
+
+  - user: AshenLightStudios
+    url: https://ashenlightstudios.itch.io
+    games:
+      - title: BounceBack
+        url: https://ashenlightstudios.itch.io/bounceback
+        thumbnail:
+          url: thumbnails/ashenlightstudios--bounceback.jpg
+          width: 256
+          height: 204
+        authors:
+          - AshenLightStudios
+        platforms:
+          - web
+
+  - user: Arvank
+    url: https://arvank.itch.io
+    games:
+      - title: Terminal Hellocity
+        url: https://arvank.itch.io/terminal-hellocity
+        thumbnail:
+          url: thumbnails/arvank--terminal-hellocity.jpg
+          width: 256
+          height: 204
+        authors:
+          - Arvank
+          - jeebs
+          - RollingRocc
+          - DOMO
+          - Vyotos
+          - Candle King
+        platforms:
+          - web
+
+  - user: helasium
+    url: https://helasium.itch.io
+    games:
+      - title: A Game about looting a Battlefield
+        url: https://helasium.itch.io/a-game-about-looting-a-battlefield
+        thumbnail:
+          url: thumbnails/helasium--a-game-about-looting-a-battlefield.jpg
+          width: 256
+          height: 204
+        authors:
+          - helasium
+          - ShortE
+        platforms:
+          - web
+          - windows
+      - title: Hand Me The CONTROL
+        url: https://helasium.itch.io/hand-me-the-control
+        thumbnail:
+          url: thumbnails/helasium--hand-me-the-control.jpg
+          width: 256
+          height: 218
+        authors:
+          - helasium
+          - ItsMaS
+        platforms:
+          - web
+          - windows
+
+  - user: boostas
+    url: https://boostas.itch.io
+    games:
+      - title: Veggie Rush
+        url: https://boostas.itch.io/veggie-rush
+        thumbnail:
+          url: thumbnails/boostas--veggie-rush.jpg
+          width: 256
+          height: 204
+        authors:
+          - boostas
+          - ItsMaS
+        platforms:
+          - web
 ---
