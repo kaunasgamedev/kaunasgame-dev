@@ -54,7 +54,7 @@
       maxDrift: 160,
     },
 
-    // Spongebob bubbles on reroll and open
+    // Rising bubbles on reroll and open
     risingBubbles: {
       countRange: {
         min: 30,
@@ -157,6 +157,9 @@
     // On screen right now
     bubbles: [],
 
+    // Users dealt this round
+    dealt: new Set(),
+
     // Popped so far, kept in localStorage
     used: new Set(),
     popCount: 0,
@@ -223,6 +226,8 @@
       const maxBubbles = Utils.isMobile() ? Constants.mobile.maxBubbles : Constants.maxBubbles
       const users = Utils.shuffle(Array.from(Bubbles.byUser.keys())).slice(0, maxBubbles)
 
+      Bubbles.dealt = new Set(users)
+
       for (let user of users) {
         Bubbles.spawn(Bubbles.pickGame(user, avoid))
       }
@@ -245,17 +250,21 @@
       Bubbles.spawnSet(previous, isQuiet)
     },
 
-    // After a pop, user first so big catalogs don't dominate
+    // Undealt user, or a new set once the screen is empty
     spawnNext: function () {
-      const onScreen = new Set(Bubbles.bubbles.map(bubble => bubble.element.dataset.user))
-      const users = Array.from(Bubbles.byUser.keys()).filter(user => !onScreen.has(user))
+      const users = Array.from(Bubbles.byUser.keys()).filter(user => !Bubbles.dealt.has(user))
 
       if (users.length > 0) {
-        Bubbles.spawn(Bubbles.pickGame(Utils.getRandomElement(users), new Set()))
+        const user = Utils.getRandomElement(users)
+
+        Bubbles.dealt.add(user)
+        Bubbles.spawn(Bubbles.pickGame(user, new Set()))
+      } else if (Bubbles.bubbles.length === 0) {
+        Bubbles.spawnSet(new Set(), false)
       }
     },
 
-    // Fresh > unseen > anything, user resets once fully used
+    // Fresh > unseen > any, used resets once all popped
     pickGame: function (user, avoid) {
       const games = Bubbles.byUser.get(user)
       const unseen = games.filter(game => !Bubbles.used.has(game))
@@ -275,7 +284,7 @@
     spawn: function (element) {
       element.hidden = false
 
-      // Reset so a respawn measures the text, not the old sphere
+      // Clear old size before measuring
       element.style.width = ''
       element.style.height = ''
       element.style.fontSize = ''
@@ -285,7 +294,7 @@
 
       element.style.fontSize = `${fontSize}px`
 
-      // Diameter is the text box diagonal so wrapped lines fit
+      // Text box diagonal, wrapped lines fit
       const textDiagonal = Math.hypot(element.offsetWidth, element.offsetHeight)
       const diameter = textDiagonal + Constants.padding * scale
 
@@ -319,7 +328,7 @@
         }
       }
 
-      // Right click pops for fun, no popup
+      // Right click pops without the popup
       element.oncontextmenu = function (clickEvent) {
         clickEvent.preventDefault()
 
@@ -351,7 +360,7 @@
       }
     },
 
-    // Position is the sphere center, bounce off the window edges
+    // Position is the center
     move: function (bubble, deltaTime) {
       const {radius, position, velocity} = bubble
 
@@ -361,7 +370,7 @@
       position.x += velocity.x * deltaTime
       position.y += velocity.y * deltaTime
 
-      // Flip only when heading in, else resize jitter
+      // Flip only when heading out, resize jitters otherwise
       if ((position.x <= radius && velocity.x < 0) || (position.x >= maxX && velocity.x > 0)) {
         velocity.x *= -1
       }
@@ -374,14 +383,14 @@
       position.y = Math.max(radius, Math.min(position.y, maxY))
     },
 
-    // Grows with the scale-in so it pushes others as it grows
+    // Follows the css scale-in
     currentRadius: function (bubble) {
       const progress = (performance.now() - bubble.spawnedAt) / Constants.spawnDurationMillis
 
       return bubble.radius * Math.min(1, progress)
     },
 
-    // Equal mass bounce, plus push apart
+    // Equal mass bounce and separation
     collide: function (bubbleA, bubbleB) {
       const deltaX = bubbleB.position.x - bubbleA.position.x
       const deltaY = bubbleB.position.y - bubbleA.position.y
@@ -433,7 +442,7 @@
       Vfx.spawnPopLines(bubble)
       Vfx.spawnFloaters(bubble, `Games Popped: ${Bubbles.popCount}`)
 
-      // Back to the pool until it gets dealt again
+      // Back to the pool
       element.hidden = true
       Bubbles.used.add(element)
       Bubbles.bubbles = Bubbles.bubbles.filter(other => other !== bubble)
@@ -449,10 +458,10 @@
     // Decoded sound buffers by name
     buffers: {},
 
-    // Impulse responses by sound name, for the ones with reverb
+    // Impulse responses by sound name, reverb sounds only
     impulses: {},
 
-    // Needs a user gesture, so called from the first pointerdown
+    // AudioContext needs a gesture
     loadSounds: function () {
       Vfx.audioContext = new AudioContext()
 
@@ -474,7 +483,7 @@
       return Promise.all(loads)
     },
 
-    // Decaying noise, good enough for a small room
+    // Decaying noise
     createImpulse: function (reverb) {
       const audioContext = Vfx.audioContext
       const length = Math.round(audioContext.sampleRate * reverb.seconds)
@@ -492,7 +501,7 @@
       return impulse
     },
 
-    // Silently skips until loaded
+    // No-op until loaded
     playSound: function (name) {
       const buffer = Vfx.buffers[name]
 
@@ -511,7 +520,7 @@
       source.buffer = buffer
       source.playbackRate.value = playbackRate
 
-      // Wav starts mid-transient, fade-in kills the click
+      // Fade-in, wav starts mid-transient
       const gain = audioContext.createGain()
       gain.gain.setValueAtTime(0, now)
       gain.gain.linearRampToValueAtTime(volume, now + 0.005)
@@ -519,7 +528,7 @@
       source.connect(gain)
       gain.connect(audioContext.destination)
 
-      // Wet path in parallel with the dry one
+      // Wet path parallel to dry
       if (reverb) {
         const convolver = audioContext.createConvolver()
         convolver.buffer = Vfx.impulses[name]
@@ -535,7 +544,7 @@
       source.start(now)
     },
 
-    // Lines flying out, animated in css
+    // Animated in css
     spawnPopLines: function (bubble) {
       const {position, radius} = bubble
       const {count, durationMillis} = Constants.popLines
@@ -562,7 +571,7 @@
       }, durationMillis)
     },
 
-    // Spongebob transition, animated in css
+    // Animated in css
     spawnRisingBubbles: function () {
       const {sizeRange, durationRange, maxDelayMillis} = Constants.risingBubbles
 
@@ -576,7 +585,7 @@
         const durationMillis = Utils.getRandomNumber(durationRange.min, durationRange.max)
         const delayMillis = Utils.getRandomNumber(0, maxDelayMillis)
 
-        // Rise and wobble are both transform, so two elements
+        // Rise and wobble are both transform, two elements
         bubbleElement.className = 'rising-bubble'
         bubbleElement.innerHTML = `<img src="${skinSrc}" alt="">`
         bubbleElement.style.left = `${Utils.getRandomNumber(0, window.innerWidth - size)}px`
@@ -585,7 +594,7 @@
         bubbleElement.style.setProperty('--delay', `${delayMillis}ms`)
         bubbleElement.style.setProperty('--wobble-offset', `${-Utils.getRandomNumber(0, 1000)}ms`)
 
-        // Spread below the screen edge so they don't enter as a line
+        // Staggered start below the edge
         const start = Utils.getRandomNumber(0, window.innerHeight * 0.3)
 
         bubbleElement.style.setProperty('--start', `${start}px`)
@@ -598,7 +607,7 @@
       }
     },
 
-    // Wavy texts rising from the bubble, animated in css
+    // Animated in css
     spawnFloaters: function (bubble, text) {
       const {position, radius} = bubble
       const {countRange, durationRange, maxOffsetMillis, sizeRange, maxDrift} = Constants.floaters
@@ -619,7 +628,7 @@
         floaterElement.style.setProperty('--drift', `${drift}px`)
         floaterElement.style.fontSize = `${Utils.getRandomNumber(sizeRange.min, sizeRange.max)}em`
 
-        // Negative delays, each starts at its own phase
+        // Negative delay, random phase
         const riseOffset = -Utils.getRandomNumber(0, maxOffsetMillis)
 
         floaterElement.style.setProperty('--rise-offset', `${riseOffset}ms`)
@@ -642,7 +651,7 @@
     initialize: function () {
       Popup.element = document.querySelector('.popup')
 
-      // X, Cancel and Open all close it and deal one more bubble
+      // X, Cancel and Open all close
       for (let closeElement of Popup.element.querySelectorAll('.popup-close, .popup-open')) {
         closeElement.addEventListener('click', function () {
           Popup.close()
@@ -654,7 +663,7 @@
         Vfx.spawnRisingBubbles()
       })
 
-      // Hidden once the close animation ends
+      // Hide after the close animation
       Popup.element.addEventListener('animationend', function (animationEvent) {
         if (animationEvent.animationName === 'popup-close') {
           Popup.element.classList.remove('closing')
@@ -691,7 +700,7 @@
       titleElement.textContent = title
       titleElement.style.color = getComputedStyle(bubbleElement).color
 
-      // Blank until the new one is in, then fades in via css
+      // Blank until loaded, css fades in
       thumbnailElement.hidden = thumbnail === ''
       thumbnailElement.width = bubbleElement.dataset.thumbnailWidth
       thumbnailElement.height = bubbleElement.dataset.thumbnailHeight
@@ -712,7 +721,7 @@
     },
   }
 
-  // Speaker toggles the bg music, sfx stay on
+  // Music only, sfx stay on
   const Mute = {
 
     initialize: function () {
