@@ -1740,6 +1740,57 @@ games:
           - WildBeanGames
         platforms:
           - windows
+      - title: Candy Please
+        url: https://wildbeangames.itch.io/candy-please
+        thumbnail:
+          url: thumbnails/wildbeangames--candy-please.jpg
+          width: 256
+          height: 144
+        authors:
+          - WildBeanGames
+        platforms:
+          - web
+      - title: Arno. Hero of his own story
+        url: https://wildbeangames.itch.io/arno-hero-of-his-own-story
+        thumbnail:
+          url: thumbnails/wildbeangames--arno-hero-of-his-own-story.jpg
+          width: 256
+          height: 202
+        authors:
+          - WildBeanGames
+        platforms:
+          - web
+          - windows
+      - title: POWERFLIGHT
+        url: https://wildbeangames.itch.io/powerflight
+        thumbnail:
+          url: thumbnails/wildbeangames--powerflight.jpg
+          width: 256
+          height: 140
+        authors:
+          - WildBeanGames
+        platforms:
+          - web
+      - title: Oops! Wrong Ad!!!
+        url: https://wildbeangames.itch.io/oops-wrong-ad
+        thumbnail:
+          url: thumbnails/wildbeangames--oops-wrong-ad.jpg
+          width: 256
+          height: 214
+        authors:
+          - WildBeanGames
+        platforms:
+          - web
+      - title: ColorRoler Prototype
+        url: https://wildbeangames.itch.io/colorroler
+        thumbnail:
+          url: thumbnails/wildbeangames--colorroler.jpg
+          width: 256
+          height: 250
+        authors:
+          - WildBeanGames
+        platforms:
+          - web
 
   - user: edd
     url: https://eddas.itch.io
