@@ -2041,4 +2041,18 @@ games:
           - echo
         platforms:
           - web
+
+  - user: Nokklip
+    url: https://nokklip.itch.io
+    games:
+      - title: Phonkside Killers (demo)
+        url: https://nokklip.itch.io/phonkside-killers
+        thumbnail:
+          url: thumbnails/nokklip--phonkside-killers.jpg
+          width: 256
+          height: 204
+        authors:
+          - Nokklip
+        platforms:
+          - windows
 ---
