@@ -2023,4 +2023,36 @@ games:
           - ItsMaS
         platforms:
           - web
+
+  - user: Nokklip
+    url: https://nokklip.itch.io
+    games:
+      - title: Phonkside Killers (demo)
+        url: https://nokklip.itch.io/phonkside-killers
+        thumbnail:
+          url: thumbnails/nokklip--phonkside-killers.jpg
+          width: 256
+          height: 204
+        authors:
+          - Nokklip
+        platforms:
+          - windows
+
+  - user: scumpii
+    url: https://scumpii.itch.io
+    games:
+      - title: D.U.C.C. - Ducks United Cosmos Crusader
+        url: https://scumpii.itch.io/ducc-ducks-united-cosmos-crusader
+        thumbnail:
+          url: thumbnails/scumpii--ducc-ducks-united-cosmos-crusader.jpg
+          width: 256
+          height: 204
+        authors:
+          - scumpii
+          - Hypnotik Fox
+          - echo
+          - Dayumm_555
+          - gamedev.silva
+        platforms:
+          - web
 ---
