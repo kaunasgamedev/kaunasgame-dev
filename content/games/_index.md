@@ -2024,6 +2024,24 @@ games:
         platforms:
           - web
 
+  - user: silva
+    url: https://gamedevsilva.itch.io/
+    games:
+      - title: DUCC
+        url: https://scumpii.itch.io/ducc-ducks-united-cosmos-crusader
+        thumbnail:
+          url: thumbnails/silva--ducc.jpg
+          width: 256
+          height: 204
+        authors:
+          - silva
+          - Dayum555
+          - scumpi
+          - Hypnotik Fox
+          - echo
+        platforms:
+          - web
+
   - user: Nokklip
     url: https://nokklip.itch.io
     games:
